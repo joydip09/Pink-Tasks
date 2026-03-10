@@ -13,8 +13,8 @@ const addTask = () => {
 
   if (!text) return;
 
-  if (text.length > 80) {
-    alert("Task cannot exceed 80 characters.");
+  if (text.length > 100) {
+    alert("Task cannot exceed 100 characters.");
     return;
   }
 
@@ -59,5 +59,5 @@ taskList.addEventListener("click", (e) => {
 const charCount = document.getElementById("char-count");
 taskInput.addEventListener("input", () => {
   const length = taskInput.value.length;
-  charCount.textContent = `${length} / 80`;
+  charCount.textContent = `${length} / 100`;
 });

@@ -13,7 +13,7 @@ export const renderTasks = (tasks) => {
     }
 
     li.innerHTML = `
-        <button class="complete-task" type="button">
+        <button class="complete-task" type="button" aria-label="Complete Task">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -32,7 +32,7 @@ export const renderTasks = (tasks) => {
 
         <span class="task-text">${task.text}</span>
 
-        <button class="delete-task" type="button">
+        <button class="delete-task" type="button" aria-label="Delete Task">
             <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

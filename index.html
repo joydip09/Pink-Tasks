@@ -13,7 +13,12 @@
     </div>
     <div class="container">
       <div class="input-group">
-        <input type="text" id="task-input" placeholder="Enter a new task" />
+        <input
+          type="text"
+          id="task-input"
+          maxlength="80"
+          placeholder="Enter a new task"
+        />
         <button type="button" id="add-task">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,6 +36,7 @@
           </svg>
         </button>
       </div>
+      <p id="char-count">0 / 80</p>
       <ul id="task-list">
         <!-- <li class="task" data-id="1">
           <button class="complete-task" type="button">

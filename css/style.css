@@ -96,6 +96,12 @@ body {
   padding: 10px;
   border-radius: 8px;
   background: #fff5f8;
+  transition: all 0.2s ease;
+}
+
+.task:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
 
 .task button {
@@ -139,6 +145,14 @@ body {
 
 #add-task:hover {
   transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+}
+
+#char-count {
+  font-size: 12px;
+  color: #777;
+  margin-top: 4px;
+  text-align: right;
 }
 
 /* Responsive design */
@@ -164,6 +178,7 @@ body {
   .task {
     padding: 10px;
     font-size: 14px;
+    transition: all 0.2s ease;
   }
 
   .task button {

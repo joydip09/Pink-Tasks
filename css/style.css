@@ -37,7 +37,8 @@ body {
 /* Main container */
 
 .container {
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   background: white;
   padding: 20px;
   border-radius: 12px;
@@ -138,4 +139,45 @@ body {
 
 #add-task:hover {
   transform: translateY(-2px);
+}
+
+/* Responsive design */
+
+@media (max-width: 480px) {
+  .container {
+    width: 92%;
+    padding: 16px;
+  }
+
+  .input-group {
+    gap: 8px;
+  }
+
+  #task-input {
+    font-size: 16px;
+  }
+
+  #add-task {
+    padding: 8px;
+  }
+
+  .task {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .task button {
+    padding: 6px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85%;
+    max-width: 450px;
+  }
+
+  .welcome {
+    padding: 0 10px;
+  }
 }

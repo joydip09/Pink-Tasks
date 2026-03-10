@@ -59,6 +59,8 @@ body {
   border-radius: 8px;
   border: 1px solid #ffd1dc;
   outline: none;
+  width: 100%;
+  padding: 10px 60px 10px 10px;
 }
 
 #add-task {
@@ -120,6 +122,9 @@ body {
 
 .task-text {
   flex: 1;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  margin-right: 10px;
 }
 
 /* Completed task */
@@ -148,11 +153,27 @@ body {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
 }
 
+.input-wrapper {
+  position: relative;
+  flex: 1;
+}
+
 #char-count {
+  position: absolute;
+  right: 10px;
+  bottom: 6px;
   font-size: 12px;
   color: #777;
-  margin-top: 4px;
-  text-align: right;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+#empty-state {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #777;
+  opacity: 0.7;
 }
 
 /* Responsive design */

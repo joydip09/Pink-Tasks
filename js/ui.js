@@ -1,7 +1,16 @@
 const taskList = document.getElementById("task-list");
+const emptyState = document.getElementById("empty-state");
 
 export const renderTasks = (tasks) => {
   taskList.innerHTML = "";
+
+  if (tasks.length === 0) {
+    emptyState.style.display = "block";
+    return;
+  }
+  else {
+    emptyState.style.display = "none";
+  }
 
   tasks.forEach((task) => {
     const li = document.createElement("li");

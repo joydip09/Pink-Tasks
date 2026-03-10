@@ -122,6 +122,10 @@ body {
   opacity: 0.5;
 }
 
+.completed svg {
+  color: #00cc44;
+}
+
 /* Icon hover */
 
 .delete-task:hover svg {
